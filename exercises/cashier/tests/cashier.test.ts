@@ -35,6 +35,8 @@ if (cashier) {
     });
     test('length is 2 after cart.add({name: "Grapes", price: 1.12, qty: 2});', () => {
       c.addItem({ name: 'Grapes', price: 1.12, qty: 2 });
+      console.log({ c });
+      console.log(c.length);
       expect(c.length).toBe(2);
     });
     test('length is 7 after cart.add({name: "Pears", price: 3.51, qty: 5});', () => {
